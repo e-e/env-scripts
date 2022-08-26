@@ -1,11 +1,16 @@
 {
   "name": "env-tools",
+  "bin": {
+    "env-tools-diff": "bin/diff.js",
+    "env-tools-sort": "bin/sort.js"
+  },
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
     "default": "npx projen default",
+    "eject": "npx projen eject",
     "package": "npx projen package",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
@@ -16,15 +21,18 @@
     "test:watch": "npx projen test:watch",
     "unbump": "npx projen unbump",
     "upgrade": "npx projen upgrade",
-    "upgrade-projen": "npx projen upgrade-projen",
     "projen": "npx projen"
   },
   "devDependencies": {
     "jest": "^29.0.1",
     "jest-junit": "^13",
-    "npm-check-updates": "^12",
+    "npm-check-updates": "^15",
+    "prettier": "^2.7.1",
     "projen": "^0.61.29",
     "standard-version": "^9"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
   },
   "main": "lib/index.js",
   "license": "Apache-2.0",
