@@ -1,18 +1,7 @@
 {
   "name": "env-scripts",
   "bin": {
-    "0": "l",
-    "1": "i",
-    "2": "b",
-    "3": "/",
-    "4": "i",
-    "5": "n",
-    "6": "d",
-    "7": "e",
-    "8": "x",
-    "9": ".",
-    "10": "j",
-    "11": "s"
+    "env-scripts": "lib/index.js"
   },
   "scripts": {
     "build": "npx projen build",
