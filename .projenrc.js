@@ -2,6 +2,7 @@ const { javascript } = require("projen");
 const project = new javascript.NodeProject({
   defaultReleaseBranch: "main",
   name: "env-scripts",
+  majorVersion: 1,
   releaseToNpm: true,
   deps: [
     "command-line-args",
