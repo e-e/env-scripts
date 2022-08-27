@@ -29,6 +29,14 @@
       "type": "build"
     },
     {
+      "name": "command-line-args",
+      "type": "runtime"
+    },
+    {
+      "name": "commander",
+      "type": "runtime"
+    },
+    {
       "name": "dotenv",
       "version": "^16.0.1",
       "type": "runtime"

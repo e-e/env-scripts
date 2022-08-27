@@ -1,21 +1,20 @@
 const { javascript } = require("projen");
 const project = new javascript.NodeProject({
   defaultReleaseBranch: "main",
-  name: "env-tools",
+  name: "env-scripts",
   releaseToNpm: true,
-  packageName: "@e-e/env-tools",
-  npmAccess: "public",
   deps: [
-    "dotenv@^16.0.1"
-  ],                /* Runtime dependencies of this module. */
+    "command-line-args",
+    "commander",
+    "dotenv@^16.0.1",
+  ] /* Runtime dependencies of this module. */,
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  devDeps: [
-    "prettier@^2.7.1"
-  ],             /* Build dependencies for this module. */
+  devDeps: ["prettier@^2.7.1"] /* Build dependencies for this module. */,
   // packageName: undefined,  /* The "name" in package.json. */
-  bin: {
-    "env-tools-diff": "bin/diff.js",
-    "env-tools-sort": "bin/sort.js"
-  }
+  // bin: {
+  //   "env-scripts-diff": "bin/diff.js",
+  //   "env-scripts-sort": "bin/sort.js"
+  // }
+  gitignore: [".idea"],
 });
 project.synth();

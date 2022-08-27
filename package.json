@@ -1,9 +1,5 @@
 {
-  "name": "env-tools",
-  "bin": {
-    "env-tools-diff": "bin/diff.js",
-    "env-tools-sort": "bin/sort.js"
-  },
+  "name": "env-scripts",
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
@@ -32,6 +28,8 @@
     "standard-version": "^9"
   },
   "dependencies": {
+    "command-line-args": "^5.2.1",
+    "commander": "*",
     "dotenv": "^16.0.1"
   },
   "main": "lib/index.js",
