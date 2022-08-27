@@ -3,6 +3,8 @@ const project = new javascript.NodeProject({
   defaultReleaseBranch: "main",
   name: "env-tools",
   releaseToNpm: true,
+  packageName: "@e-e/env-tools",
+  npmAccess: "public",
   deps: [
     "dotenv@^16.0.1"
   ],                /* Runtime dependencies of this module. */
