@@ -2,7 +2,7 @@ const { javascript } = require("projen");
 const project = new javascript.NodeProject({
   defaultReleaseBranch: "main",
   name: "env-tools",
-
+  releaseToNpm: true,
   deps: [
     "dotenv@^16.0.1"
   ],                /* Runtime dependencies of this module. */
