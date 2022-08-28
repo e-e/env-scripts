@@ -4,7 +4,27 @@
 Compares environment variables defined in both env files, and reports any variables missing in either.
 
 _Example:_
+
+Given
+```text
+# .env.example
+
+TEST_VAR_1=AAA
+TEST_VAR_2=BBB
+```
+
+```text
+# .env
+
+TEST_VAR_1=AAA
+TEST_VAR_3=CCC
+```
+
+running
+
 `npx env-scripts diff .env.example .env`:
+
+will result in
 ```text
 Missing:
 TEST_VAR_2
