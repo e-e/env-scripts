@@ -1,5 +1,3 @@
-# replace this
-
 ## Commands
 
 ### `npx env-scripts diff <source-env-relative-path> <destination-env-relative-path>`

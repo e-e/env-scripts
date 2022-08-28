@@ -1,5 +1,9 @@
 {
   "name": "env-scripts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e-e/env-scripts"
+  },
   "bin": {
     "env-scripts": "lib/index.js"
   },

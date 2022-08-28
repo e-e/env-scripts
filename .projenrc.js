@@ -4,6 +4,7 @@ const project = new javascript.NodeProject({
   name: "env-scripts",
   majorVersion: 1,
   releaseToNpm: true,
+  repository: "https://github.com/e-e/env-scripts",
   deps: [
     "command-line-args",
     "commander",
