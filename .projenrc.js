@@ -17,5 +17,7 @@ const project = new javascript.NodeProject({
     "env-scripts": "lib/index.js",
   },
   gitignore: [".idea"],
+  description: "A collection of scripts to perform actions related to .env files.",
+  keywords: [".env file", ".env files", "sort .env file", ".env file diff", "find missing .env variables", ".env"]
 });
 project.synth();

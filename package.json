@@ -1,5 +1,6 @@
 {
   "name": "env-scripts",
+  "description": "A collection of scripts to perform actions related to .env files.",
   "repository": {
     "type": "git",
     "url": "https://github.com/e-e/env-scripts"
@@ -39,6 +40,14 @@
     "commander": "*",
     "dotenv": "^16.0.1"
   },
+  "keywords": [
+    ".env",
+    ".env file",
+    ".env file diff",
+    ".env files",
+    "find missing .env variables",
+    "sort .env file"
+  ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "version": "0.0.0",
