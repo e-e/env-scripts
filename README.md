@@ -41,3 +41,7 @@ Reads the env file and writes to a new file named `<env-file>-sorted`
 
 _Example:_
 `npx env-scripts sort .env` -> writes to a file named `.env-sorted`
+
+
+### `npx env-scripts diff-values <env-1> <env-2>`
+Compares value equality between two env files
